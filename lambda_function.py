@@ -4,7 +4,7 @@ import boto3
 bedrock = boto3.client("bedrock-runtime")
 
 def lambda_handler(event, context):
-    # 1. Input handle karna hh
+    # 1. Input handle karna hhhhhhh
     if "body" in event and event["body"]:
         try:
             body = json.loads(event["body"])
