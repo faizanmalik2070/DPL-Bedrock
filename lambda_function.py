@@ -4,7 +4,7 @@ import boto3
 bedrock = boto3.client("bedrock-runtime")
 
 def lambda_handler(event, context):
-    # 1. Input handle karna hhhhhhh
+    
     if "body" in event and event["body"]:
         try:
             body = json.loads(event["body"])
@@ -43,7 +43,7 @@ def lambda_handler(event, context):
             body=json.dumps(payload)
         )
 
-        # 3. Response read karna
+        # 3. Response read 
         response_body = json.loads(response["body"].read())
         
         # Nova ka response extract karna
